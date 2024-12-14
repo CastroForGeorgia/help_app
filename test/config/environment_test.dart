@@ -1,6 +1,6 @@
+import 'package:flutter_test/flutter_test.dart';
 import 'package:help_app/config/build_type.dart';
 import 'package:help_app/config/environment.dart';
-import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Environment Tests', () {

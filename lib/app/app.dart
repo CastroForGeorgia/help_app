@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:help_app/bloc/init/init_bloc.dart';
 import 'package:help_app/di/di_container.dart';
 import 'package:help_app/generated/l10n.dart';
 import 'package:help_app/index.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({

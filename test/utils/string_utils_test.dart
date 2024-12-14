@@ -1,5 +1,5 @@
-import 'package:help_app/utils/string_utils.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/utils/string_utils.dart';
 
 void main() {
   group('DateFormatExtension Tests', () {

@@ -1,5 +1,5 @@
-import 'package:help_app/bloc/news/news_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/bloc/news/news_bloc.dart';
 
 void main() {
   group('News Event Tests', () {

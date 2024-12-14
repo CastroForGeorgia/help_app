@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:help_app/generated/l10n.dart';
-import 'package:help_app/index.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/generated/l10n.dart';
+import 'package:help_app/index.dart';
 
 import '../mocks.dart';
 

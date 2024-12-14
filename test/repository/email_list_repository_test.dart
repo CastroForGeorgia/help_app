@@ -1,5 +1,5 @@
-import 'package:help_app/index.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/index.dart';
 import 'package:mockito/mockito.dart';
 
 import '../helpers/data.dart';

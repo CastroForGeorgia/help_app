@@ -1,6 +1,6 @@
+import 'package:get_it/get_it.dart';
 import 'package:help_app/di/di_container.dart';
 import 'package:help_app/di/di_initializer.config.dart';
-import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

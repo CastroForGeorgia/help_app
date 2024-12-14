@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:help_app/constants/index.dart';
 import 'package:help_app/generated/colors.gen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /// Class that contains all the different styles of an app
 class Style {
@@ -102,6 +102,7 @@ class Style {
   }
 
   /// Yellow style
+  // Example for Experimental Theme
   static ThemeData get experimental {
     const darkColorScheme = ColorScheme(
       brightness: Brightness.dark,
@@ -121,11 +122,9 @@ class Style {
       errorContainer: Color(0xFF93000A),
       onError: Color(0xFF690005),
       onErrorContainer: Color(0xFFFFDAD6),
-      background: Color(0xFF191C1A),
-      onBackground: Color(0xFFE1E3E0),
-      surface: Color(0xFF191C1A),
-      onSurface: Color(0xFFE1E3E0),
-      surfaceVariant: Color(0xFF404944),
+      surface: Color(0xFF191C1A), // Updated
+      onSurface: Color(0xFFE1E3E0), // Updated
+      surfaceContainerHighest: Color(0xFF404944), // Updated
       onSurfaceVariant: Color(0xFFBFC9C2),
       outline: Color(0xFF89938D),
       onInverseSurface: Color(0xFF191C1A),
@@ -159,11 +158,9 @@ class Style {
       errorContainer: Color(0xFFFFDAD6),
       onError: Color(0xFFFFFFFF),
       onErrorContainer: Color(0xFF410002),
-      background: Color(0xFFFFFBFF),
-      onBackground: Color(0xFF201B17),
-      surface: Color(0xFFFFFBFF),
-      onSurface: Color(0xFF201B17),
-      surfaceVariant: Color(0xFFF3DFD1),
+      surface: Color(0xFFFFFBFF), // Replaced background with surface
+      onSurface: Color(0xFF201B17), // Replaced onBackground with onSurface
+      surfaceContainerHighest: Color(0xFFF3DFD1), // Replaced surfaceVariant
       onSurfaceVariant: Color(0xFF51443B),
       outline: Color(0xFF837469),
       onInverseSurface: Color(0xFFFAEFE8),
@@ -179,8 +176,8 @@ class Style {
   }
 
   static ThemeData get darkGoldTheme {
-    const lightColorScheme = ColorScheme(
-      brightness: Brightness.light,
+    const darkColorScheme = ColorScheme(
+      brightness: Brightness.dark,
       primary: Color(0xFF8F4E00),
       onPrimary: Color(0xFFFFFFFF),
       primaryContainer: Color(0xFFFFDCC1),
@@ -197,15 +194,13 @@ class Style {
       errorContainer: Color(0xFFFFDAD6),
       onError: Color(0xFFFFFFFF),
       onErrorContainer: Color(0xFF410002),
-      background: Color(0xFFFFFBFF),
-      onBackground: Color(0xFF201B17),
-      surface: Color(0xFFFFFBFF),
-      onSurface: Color(0xFF201B17),
-      surfaceVariant: Color(0xFFF3DFD1),
-      onSurfaceVariant: Color(0xFF51443B),
+      surface: Color(0xFF201B17), // Replaced background with surface
+      onSurface: Color(0xFFE1E3E0), // Replaced onBackground with onSurface
+      surfaceContainerHighest: Color(0xFF3F4945), // Replaced surfaceVariant
+      onSurfaceVariant: Color(0xFFBFC9C3),
       outline: Color(0xFF837469),
-      onInverseSurface: Color(0xFFFAEFE8),
-      inverseSurface: Color(0xFF352F2B),
+      onInverseSurface: Color(0xFF201B17),
+      inverseSurface: Color(0xFFE1E3E0),
       inversePrimary: Color(0xFFFFB779),
       shadow: Color(0xFF000000),
       surfaceTint: Color(0xFF8F4E00),
@@ -213,7 +208,7 @@ class Style {
       scrim: Color(0xFF000000),
     );
 
-    return ThemeData(useMaterial3: true, colorScheme: lightColorScheme);
+    return ThemeData(useMaterial3: true, colorScheme: darkColorScheme);
   }
 
   static ThemeData get lightMintTheme {
@@ -235,11 +230,9 @@ class Style {
       errorContainer: Color(0xFFFFDAD6),
       onError: Color(0xFFFFFFFF),
       onErrorContainer: Color(0xFF410002),
-      background: Color(0xFFFBFDFA),
-      onBackground: Color(0xFF191C1B),
-      surface: Color(0xFFFBFDFA),
-      onSurface: Color(0xFF191C1B),
-      surfaceVariant: Color(0xFFDBE5DF),
+      surface: Color(0xFFFBFDFA), // Replaced background with surface
+      onSurface: Color(0xFF191C1B), // Replaced onBackground with onSurface
+      surfaceContainerHighest: Color(0xFFDBE5DF), // Replaced surfaceVariant
       onSurfaceVariant: Color(0xFF3F4945),
       outline: Color(0xFF6F7975),
       onInverseSurface: Color(0xFFEFF1EE),
@@ -273,11 +266,9 @@ class Style {
       errorContainer: Color(0xFF93000A),
       onError: Color(0xFF690005),
       onErrorContainer: Color(0xFFFFDAD6),
-      background: Color(0xFF191C1B),
-      onBackground: Color(0xFFE1E3E0),
-      surface: Color(0xFF191C1B),
-      onSurface: Color(0xFFE1E3E0),
-      surfaceVariant: Color(0xFF3F4945),
+      surface: Color(0xFF191C1B), // Updated
+      onSurface: Color(0xFFE1E3E0), // Updated
+      surfaceContainerHighest: Color(0xFF3F4945), // Updated
       onSurfaceVariant: Color(0xFFBFC9C3),
       outline: Color(0xFF89938E),
       onInverseSurface: Color(0xFF191C1B),
@@ -287,10 +278,6 @@ class Style {
       surfaceTint: Color(0xFF60DBB8),
       outlineVariant: Color(0xFF3F4945),
       scrim: Color(0xFF000000),
-    );
-
-    darkColorScheme.copyWith(
-      
     );
 
     return ThemeData(useMaterial3: true, colorScheme: darkColorScheme);

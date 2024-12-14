@@ -70,7 +70,7 @@ make gen
 make localize
 
 # analyze the project
-check
+make check
 ```
 
 ## Contributing 🤝

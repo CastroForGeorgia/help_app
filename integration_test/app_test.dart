@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:help_app/main.dart' as app;
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/main.dart' as app;
 import 'package:integration_test/integration_test.dart';
 
 void main() {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:help_app/generated/l10n.dart';
-import 'package:help_app/index.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/generated/l10n.dart';
+import 'package:help_app/index.dart';
 import 'package:mocktail/mocktail.dart';
 
 import 'email_list_view_test.dart';

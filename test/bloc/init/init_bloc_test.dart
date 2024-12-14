@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:help_app/bloc/init/init_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:help_app/bloc/init/init_bloc.dart';
 
 void main() {
   group('Init Bloc Event Tests', () {
