@@ -1,8 +1,5 @@
-# flutter-bloc-app-template 🤖
-This is a basic Flutter project template that uses the BLoC pattern architecture for state management. 
-It is a good starting point for creating a new Flutter app that uses BLoC for state management.
-
-This template is focused on delivering a project with **static analysis** and **continuous integration** already in place.
+# help_app 🆘
+This is a Flutter project template for creating a Help Application using the BLoC pattern for state management.
 
 [![style: lint][lint-style-badge]][lint-style-link]
 [![codecov][codecov-badge]][codecov-link]
@@ -12,11 +9,7 @@ This template is focused on delivering a project with **static analysis** and **
 [![style: effective dart][style-badge]][style-link]
 [![GitHub forks][forks-badge]][forks-link]
 [![GitHub stars][stars-badge]][stars-link]
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1c12bf943fea43098f0853a05e2366be)](https://app.codacy.com/gh/ashtanko/flutter_bloc_app_template/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/1c12bf943fea43098f0853a05e2366be)](https://app.codacy.com/gh/ashtanko/flutter_bloc_app_template/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 
-## How to use 🐾
-Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/ashtanko/flutter_bloc_app_template/generate) button to create a new repo starting from this template.
 
 ## Features 🦄
 - Theme support
@@ -44,26 +37,6 @@ For example dev configuration for Android Studio looks like:
 <img src="/preview/config/dev.png" width="32%"/>
 </p>
 
-## Android Screenshots
-<p align="left">
-<img src="/preview/android/widgets.jpg" width="32%"/>
-<img src="/preview/android/light_theme.png" width="32%"/>
-<img src="/preview/android/dark_theme.png" width="32%"/>
-<img src="/preview/android/yellow_theme.png" width="32%"/>
-<img src="/preview/android/settings.png" width="32%"/>
-<img src="/preview/android/theme_bottom_sheet.png" width="32%"/>
-</p>
-
-## iOS Screenshots
-<p align="left">
-<img src="/preview/ios/widgets.png" width="32%"/>
-<img src="/preview/ios/light_theme.png" width="32%"/>
-<img src="/preview/ios/dark_theme.png" width="32%"/>
-<img src="/preview/ios/yellow_theme.png" width="32%"/>
-<img src="/preview/ios/settings.png" width="32%"/>
-<img src="/preview/ios/theme_bottom_sheet.png" width="32%"/>
-</p>
-
 
 ## Static Analysis 🔍
 
@@ -76,7 +49,7 @@ Supported Dart Code [**Metrics**](https://dartcodemetrics.dev/docs/getting-start
 Dart [**Lint**](https://github.com/passsy/dart-lint)
 
 ## CI ⚙️
-This template is using [**GitHub Actions**](https://github.com/ashtanko/flutter_app_skeleton/actions) as CI. You don't need to setup any external service and you should have a running CI once you start using this template.
+This template is using [**GitHub Actions**](https://github.com/ashtanko/flutter_app_skeleton/actions) as CI.
 
 ## How to build 🛠️
 
@@ -100,13 +73,6 @@ make localize
 check
 ```
 
-## Reminders 🧠
-Change name in pubspec.yaml file
-
-Remove anything you don't need
-
-Configure analysis_options.yaml for your needs
-
 ## Contributing 🤝
 
 Feel free to open a issue or submit a pull request for any bugs/improvements.
@@ -118,17 +84,17 @@ Please note that the generated template is offering to start with a MIT license 
 
 [lint-style-badge]: https://img.shields.io/badge/style-lint-4BC0F5.svg
 [lint-style-link]: https://pub.dev/packages/lint
-[codecov-badge]: https://codecov.io/gh/ashtanko/flutter_bloc_app_template/branch/main/graph/badge.svg?token=T68Rqwj7Ll
-[codecov-link]: https://codecov.io/gh/ashtanko/flutter_bloc_app_template
-[ci-badge]: https://github.com/ashtanko/flutter_bloc_app_template/actions/workflows/ci.yml/badge.svg
-[ci-link]: https://github.com/ashtanko/flutter_bloc_app_template/actions/workflows/ci.yml
-[codefactor-badge]: https://www.codefactor.io/repository/github/ashtanko/flutter_bloc_app_template/badge
-[codefactor-link]: https://www.codefactor.io/repository/github/ashtanko/flutter_bloc_app_template
+[codecov-badge]: https://codecov.io/gh/CastroForGeorgia/help_app/branch/main/graph/badge.svg?token=T68Rqwj7Ll
+[codecov-link]: https://codecov.io/gh/CastroForGeorgia/help_app
+[ci-badge]: https://github.com/CastroForGeorgia/help_app/actions/workflows/ci.yml/badge.svg
+[ci-link]: https://github.com/CastroForGeorgia/help_app/actions/workflows/ci.yml
+[codefactor-badge]: https://www.codefactor.io/repository/github/CastroForGeorgia/help_app/badge
+[codefactor-link]: https://www.codefactor.io/repository/github/CastroForGeorgia/help_app
 [license-badge]: https://img.shields.io/github/license/dart-code-checker/dart-code-metrics
 [license-link]: https://github.com/dart-code-checker/dart-code-metrics/blob/master/LICENSE
 [style-badge]: https://img.shields.io/badge/style-effective_dart-40c4ff.svg
 [style-link]: https://pub.dev/packages/effective_dart
-[forks-badge]: https://img.shields.io/github/forks/ashtanko/flutter_bloc_app_template
-[forks-link]: https://github.com/ashtanko/flutter_bloc_app_template/network
-[stars-badge]: https://img.shields.io/github/stars/ashtanko/flutter_bloc_app_template
-[stars-link]: https://github.com/ashtanko/flutter_bloc_app_template/stargazers
+[forks-badge]: https://img.shields.io/github/forks/CastroForGeorgia/help_app
+[forks-link]: https://github.com/CastroForGeorgia/help_app/network
+[stars-badge]: https://img.shields.io/github/stars/CastroForGeorgia/help_app
+[stars-link]: https://github.com/CastroForGeorgia/help_app/stargazers

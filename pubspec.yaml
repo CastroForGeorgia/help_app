@@ -1,5 +1,5 @@
-name: flutter_bloc_app_template
-description: The project of the empty template with Flutter has built the basic framework to realize the functions of internationalization, theme peeling etc.
+name: help_app
+description: Contains application code for Help system
 
 publish_to: 'none'
 
