@@ -73,8 +73,11 @@ jobs:
           min_coverage: 59
           exclude: '**/*.g.dart **/*.gen.dart **/lib/di/ lib/generated/ **/lib/generated/ lib/di/*.dart **/lib/constants/ lib/constants/*.dart/ lib/routers/router.dart'
 
-      - name: Upload coverage to codecov
-        uses: codecov/codecov-action@v3
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: CastroForGeorgia/help_app
 
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1
