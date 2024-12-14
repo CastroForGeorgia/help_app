@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_app_template/di/di_container.dart';
-import 'package:flutter_bloc_app_template/di/di_initializer.config.dart';
+import 'package:help_app/di/di_container.dart';
+import 'package:help_app/di/di_initializer.config.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';

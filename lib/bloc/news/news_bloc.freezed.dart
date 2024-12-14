@@ -71,6 +71,9 @@ class _$NewsEventCopyWithImpl<$Res, $Val extends NewsEvent>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of NewsEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -86,6 +89,9 @@ class __$$LoadImplCopyWithImpl<$Res>
     implements _$$LoadImplCopyWith<$Res> {
   __$$LoadImplCopyWithImpl(_$LoadImpl _value, $Res Function(_$LoadImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NewsEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -188,6 +194,9 @@ class __$$RetryImplCopyWithImpl<$Res>
   __$$RetryImplCopyWithImpl(
       _$RetryImpl _value, $Res Function(_$RetryImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NewsEvent
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -339,6 +348,9 @@ class _$NewsStateCopyWithImpl<$Res, $Val extends NewsState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of NewsState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -355,6 +367,9 @@ class __$$InitialImplCopyWithImpl<$Res>
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NewsState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -463,6 +478,9 @@ class __$$LoadingImplCopyWithImpl<$Res>
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NewsState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -571,6 +589,9 @@ class __$$ErrorImplCopyWithImpl<$Res>
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of NewsState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc

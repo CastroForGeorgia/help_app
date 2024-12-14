@@ -57,7 +57,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "dev.shtanko.flutter_bloc_app_template"
+        applicationId "com.castroforgeorgia.help_app"
         minSdk flutter.minSdkVersion
         targetSdk flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

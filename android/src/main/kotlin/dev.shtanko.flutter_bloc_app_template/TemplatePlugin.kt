@@ -1,4 +1,4 @@
-package dev.shtanko.flutter_bloc_app_template
+package com.castroforgeorgia.help_app
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

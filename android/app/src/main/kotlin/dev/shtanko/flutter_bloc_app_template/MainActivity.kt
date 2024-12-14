@@ -1,4 +1,4 @@
-package dev.shtanko.flutter_bloc_app_template
+package com.castroforgeorgia.help_app
 
 import android.os.Bundle
 import io.flutter.embedding.android.FlutterActivity

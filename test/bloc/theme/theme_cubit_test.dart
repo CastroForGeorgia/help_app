@@ -1,10 +1,10 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/bloc/theme/app_theme.dart';
-import 'package:flutter_bloc_app_template/bloc/theme/theme_cubit.dart';
-import 'package:flutter_bloc_app_template/data/theme_storage.dart';
-import 'package:flutter_bloc_app_template/repository/theme_repository.dart';
-import 'package:flutter_bloc_app_template/theme/style.dart';
+import 'package:help_app/bloc/theme/app_theme.dart';
+import 'package:help_app/bloc/theme/theme_cubit.dart';
+import 'package:help_app/data/theme_storage.dart';
+import 'package:help_app/repository/theme_repository.dart';
+import 'package:help_app/theme/style.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

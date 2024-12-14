@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/generated/l10n.dart';
+import 'package:help_app/generated/l10n.dart';
 
 class NewsScreen extends StatelessWidget {
   const NewsScreen({super.key});

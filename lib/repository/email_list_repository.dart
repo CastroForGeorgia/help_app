@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_app_template/data/storage.dart';
-import 'package:flutter_bloc_app_template/models/email.dart';
+import 'package:help_app/data/storage.dart';
+import 'package:help_app/models/email.dart';
 
 const _delay = Duration(milliseconds: 3000);
 

@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_app_template/models/email.dart';
-import 'package:flutter_bloc_app_template/repository/email_list_repository.dart';
+import 'package:help_app/models/email.dart';
+import 'package:help_app/repository/email_list_repository.dart';
 
 part 'email_list_event.dart';
 

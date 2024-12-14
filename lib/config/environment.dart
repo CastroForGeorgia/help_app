@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_bloc_app_template/config/build_type.dart';
+import 'package:help_app/config/build_type.dart';
 
 /// A class for managing environment configurations based on different
 /// build types.

@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/bloc/theme/app_theme.dart';
-import 'package:flutter_bloc_app_template/index.dart';
-import 'package:flutter_bloc_app_template/repository/theme_repository.dart';
+import 'package:help_app/bloc/theme/app_theme.dart';
+import 'package:help_app/index.dart';
+import 'package:help_app/repository/theme_repository.dart';
 
 final Map<AppTheme, ThemeData> themeData = {
   AppTheme.system: Style.light,

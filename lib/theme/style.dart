@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc_app_template/constants/index.dart';
-import 'package:flutter_bloc_app_template/generated/colors.gen.dart';
+import 'package:help_app/constants/index.dart';
+import 'package:help_app/generated/colors.gen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// Class that contains all the different styles of an app

@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_app_template/bloc/news/news_bloc.dart';
+import 'package:help_app/bloc/news/news_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

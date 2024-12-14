@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.shtanko.flutter_bloc_app_template">
+    package="com.castroforgeorgia.help_app">
    <application
-        android:label="flutter_bloc_app_template"
+        android:label="help_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

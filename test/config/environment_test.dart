@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_app_template/config/build_type.dart';
-import 'package:flutter_bloc_app_template/config/environment.dart';
+import 'package:help_app/config/build_type.dart';
+import 'package:help_app/config/environment.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

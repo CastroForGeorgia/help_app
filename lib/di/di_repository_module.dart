@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_app_template/data/theme_storage.dart';
-import 'package:flutter_bloc_app_template/repository/theme_repository.dart';
+import 'package:help_app/data/theme_storage.dart';
+import 'package:help_app/repository/theme_repository.dart';
 import 'package:injectable/injectable.dart';
 
 @module

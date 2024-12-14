@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_app_template/routes/router.dart' as router;
+import 'package:help_app/routes/router.dart' as router;
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

@@ -1,6 +1,6 @@
-import 'package:flutter_bloc_app_template/index.dart';
-import 'package:flutter_bloc_app_template/utils/date_time_utils.dart';
-import 'package:flutter_bloc_app_template/utils/string_utils.dart';
+import 'package:help_app/index.dart';
+import 'package:help_app/utils/date_time_utils.dart';
+import 'package:help_app/utils/string_utils.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../helpers/data.dart';
