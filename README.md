@@ -9,7 +9,7 @@ This is a Flutter project template for creating a Help Application using the BLo
 [![style: effective dart][style-badge]][style-link]
 [![GitHub forks][forks-badge]][forks-link]
 [![GitHub stars][stars-badge]][stars-link]
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e129f2faf1fa4f6bb8aa9541e43d5720)](https://app.codacy.com/gh/CastroForGeorgia/help_app/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Features 🦄
 - Theme support
