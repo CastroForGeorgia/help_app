@@ -95,6 +95,62 @@ class Style {
     return ThemeData(useMaterial3: true, colorScheme: lightColorScheme);
   }
 
+  static ColorScheme myColorScheme = const ColorScheme(
+    brightness: Brightness.light,
+    // Core Brand
+    primary: Color(0xFF2E8B57), // Primary Green
+    onPrimary: Color(0xFFFFFFFF), // White text on primary
+    primaryContainer: Color(0xFF7CCB9C), // Lighter green container
+    onPrimaryContainer: Color(0xFF00210F), // Darker green text on container
+
+    secondary: Color(0xFFFFDAB9), // Peach accent
+    onSecondary: Color(0xFF000000), // Black text on peach
+    secondaryContainer: Color(0xFFFFE5CA), // Lighter peach container
+    onSecondaryContainer: Color(0xFF2E1500), // Darker text on light peach
+
+    tertiary: Color(0xFFC0392B), // Red accent (tertiary)
+    onTertiary: Color(0xFFFFFFFF), // White text on red
+    tertiaryContainer: Color(0xFFFFEBE8), // Light red container
+    onTertiaryContainer: Color(0xFF3F0A05), // Dark text on light red
+
+    error: Color(0xFFFF6F61), // Coral as error color
+    onError: Color(0xFFFFFFFF), // White text on error
+    errorContainer: Color(0xFFFFD8D5), // Light coral container for error states
+    onErrorContainer: Color(0xFF410002), // Dark text on light error container
+
+    // Surfaces & Background
+    surface: Color(0xFFFFFFFF), // White surface
+    onSurface: Color(0xFF000000), // Black text on surface
+
+    // Additional variants
+    surfaceContainerHighest:
+        Color(0xFF87CEEB), // Light blue variant (for cards, etc.)
+    onSurfaceVariant: Color(0xFF1A3C4B), // Dark text on blue variant
+
+    outline: Color(0xFF808000), // Olive outline
+    shadow: Color(0xFF000000), // Standard black shadow
+    scrim: Color(0xFF000000), // Black scrim for overlays
+
+    inverseSurface: Color(0xFF1A1A1A), // Dark inverse surface
+    onInverseSurface: Color(0xFFF4F4F4), // Light text on dark inverse
+    inversePrimary: Color(0xFFC7F5DA), // Lighter green for inverse usage
+    surfaceTint: Color(0xFF2E8B57), // Tint color used by M3 components
+  );
+
+  static ThemeData helpAppLightTheme = ThemeData(
+    useMaterial3: true,
+    colorScheme: myColorScheme,
+    // Customize text theme, app bar theme, etc. as needed:
+    textTheme: ThemeData.light().textTheme,
+    appBarTheme: AppBarTheme(
+      backgroundColor: myColorScheme.primary,
+      foregroundColor: myColorScheme.onPrimary,
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: myColorScheme.primary,
+      foregroundColor: myColorScheme.onPrimary,
+    ),
+  );
   static ThemeData get darkGoldTheme {
     const darkColorScheme = ColorScheme(
       brightness: Brightness.dark,

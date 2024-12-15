@@ -5,14 +5,8 @@ import 'package:help_app/index.dart';
 import 'package:help_app/repository/theme_repository.dart';
 
 final Map<AppTheme, ThemeData> themeData = {
-  AppTheme.system: Style.light,
-  AppTheme.light: Style.light,
-  AppTheme.lightGold: Style.lightGoldTheme,
-  AppTheme.lightMint: Style.lightMintTheme,
+  AppTheme.light: Style.helpAppLightTheme,
   AppTheme.dark: Style.dark,
-  AppTheme.darkGold: Style.darkGoldTheme,
-  AppTheme.darkMint: Style.darkMintTheme,
-  AppTheme.experimental: Style.experimental,
 };
 
 /// Saves and loads information regarding the theme setting.
