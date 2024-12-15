@@ -27,51 +27,9 @@ class SettingsScreen extends StatelessWidget {
                   padding: EdgeInsets.zero,
                   children: [
                     ThemeDialogCell<AppTheme>(
-                      title: S.of(context).darkThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.dark,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
                       title: S.of(context).lightThemeTitle,
                       groupValue: state,
                       value: AppTheme.light,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).lightGoldThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.lightGold,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).lightMintThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.lightMint,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).darkGoldThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.darkGold,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).darkMintThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.darkMint,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).systemThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.system,
-                      onChanged: (value) => updateTheme(context, value),
-                    ),
-                    ThemeDialogCell<AppTheme>(
-                      title: S.of(context).experimentalThemeTitle,
-                      groupValue: state,
-                      value: AppTheme.experimental,
                       onChanged: (value) => updateTheme(context, value),
                     ),
                   ],

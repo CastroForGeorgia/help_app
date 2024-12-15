@@ -62,7 +62,6 @@ class MyApp extends StatelessWidget {
                 onGenerateTitle: (BuildContext context) =>
                     S.of(context).appTitle,
                 theme: context.watch<ThemeCubit>().getDefaultTheme(),
-                darkTheme: context.watch<ThemeCubit>().darkTheme,
                 themeMode: context.watch<ThemeCubit>().themeMode,
                 navigatorKey: appNavigatorKey,
                 onGenerateRoute: navigator.onGenerateRoute,

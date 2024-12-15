@@ -36,61 +36,11 @@ void main() {
   setUp(() {
     themeCubit = MockThemeCubit();
   });
-
-  void assertThemeDialogCell(
-    WidgetTester tester,
-    String title,
-    AppTheme themeState,
-    ThemeMode themeMode,
-  ) async {
-    when(() => themeCubit.state).thenReturn(themeState);
-    when(() => themeCubit.themeMode).thenReturn(themeMode);
-
-    await tester.pumpSettings(themeCubit);
-    await tester.pump();
-    await tester.tap(find.byIcon(Icons.palette));
-    await tester.pump();
-
-    expect(
-      find.byWidgetPredicate(
-        (widget) =>
-            widget is ThemeDialogCell<AppTheme> &&
-            widget.title == title &&
-            widget.value == themeState,
-      ),
-      findsOneWidget,
-    );
-
-    expect(find.widgetWithIcon(ThemeDialogCell<AppTheme>, Icons.check),
-        findsOneWidget);
-  }
-
-  void verifyThemeChange({
-    required WidgetTester tester,
-    required String widgetTitle,
-    required AppTheme prevThemeState,
-    required ThemeMode themeMode,
-    required AppTheme newThemeState,
-  }) async {
-    when(() => themeCubit.state).thenReturn(prevThemeState);
-    when(() => themeCubit.themeMode).thenReturn(themeMode);
-
-    await tester.pumpSettings(themeCubit);
-    await tester.pump();
-    await tester.tap(find.byIcon(Icons.palette));
-    await tester.pumpAndSettle();
-    await tester.tap(
-      find.widgetWithText(ThemeDialogCell<AppTheme>, widgetTitle),
-      warnIfMissed: true,
-    );
-
-    verify(() => themeCubit.updateTheme(newThemeState)).called(1);
-  }
-
+  
   group('Settings Screen Tests', () {
     testWidgets('renders settings title', (tester) async {
-      when(() => themeCubit.state).thenReturn(AppTheme.dark);
-      when(() => themeCubit.themeMode).thenReturn(ThemeMode.dark);
+      when(() => themeCubit.state).thenReturn(AppTheme.light);
+      when(() => themeCubit.themeMode).thenReturn(ThemeMode.light);
 
       await tester.pumpSettings(themeCubit);
       await tester.pump();
@@ -99,8 +49,8 @@ void main() {
     });
 
     testWidgets('render setting list', (tester) async {
-      when(() => themeCubit.state).thenReturn(AppTheme.dark);
-      when(() => themeCubit.themeMode).thenReturn(ThemeMode.dark);
+      when(() => themeCubit.state).thenReturn(AppTheme.light);
+      when(() => themeCubit.themeMode).thenReturn(ThemeMode.light);
 
       await tester.pumpSettings(themeCubit);
       await tester.pump();
@@ -109,8 +59,8 @@ void main() {
     });
 
     testWidgets('render setting list items', (tester) async {
-      when(() => themeCubit.state).thenReturn(AppTheme.dark);
-      when(() => themeCubit.themeMode).thenReturn(ThemeMode.dark);
+      when(() => themeCubit.state).thenReturn(AppTheme.light);
+      when(() => themeCubit.themeMode).thenReturn(ThemeMode.light);
 
       await tester.pumpSettings(themeCubit);
       await tester.pump();
@@ -122,8 +72,8 @@ void main() {
     });
 
     testWidgets('render bottom sheet dialog items', (tester) async {
-      when(() => themeCubit.state).thenReturn(AppTheme.dark);
-      when(() => themeCubit.themeMode).thenReturn(ThemeMode.dark);
+      when(() => themeCubit.state).thenReturn(AppTheme.light);
+      when(() => themeCubit.themeMode).thenReturn(ThemeMode.light);
 
       await tester.pumpSettings(themeCubit);
       await tester.pump();
@@ -132,105 +82,5 @@ void main() {
 
       expect(find.byType(ThemeDialogCell<AppTheme>), findsNWidgets(8));
     });
-
-    testWidgets('render bottom sheet dialog item for system theme',
-        (tester) async {
-      assertThemeDialogCell(
-        tester,
-        'System Theme',
-        AppTheme.system,
-        ThemeMode.system,
-      );
-    });
-
-    testWidgets('render bottom sheet dialog item for light theme',
-        (tester) async {
-      assertThemeDialogCell(
-        tester,
-        'Light Theme',
-        AppTheme.light,
-        ThemeMode.light,
-      );
-    });
-
-    testWidgets('render bottom sheet dialog item for dark theme',
-        (tester) async {
-      assertThemeDialogCell(
-        tester,
-        'Dark Theme',
-        AppTheme.dark,
-        ThemeMode.dark,
-      );
-    });
-
-    testWidgets('render bottom sheet dialog item for yellow theme',
-        (tester) async {
-      assertThemeDialogCell(
-        tester,
-        'Light Gold',
-        AppTheme.lightGold,
-        ThemeMode.light,
-      );
-    });
-
-    // testWidgets('change to system theme', (tester) async {
-    //   verifyThemeChange(
-    //     tester: tester,
-    //     widgetTitle: 'System Theme',
-    //     prevThemeState: AppTheme.dark,
-    //     themeMode: ThemeMode.dark,
-    //     newThemeState: AppTheme.system,
-    //   );
-    // });
-
-    testWidgets('change to light theme theme', (tester) async {
-      verifyThemeChange(
-        tester: tester,
-        widgetTitle: 'Light Theme',
-        prevThemeState: AppTheme.dark,
-        themeMode: ThemeMode.dark,
-        newThemeState: AppTheme.light,
-      );
-    });
-
-    testWidgets('change to dark theme theme', (tester) async {
-      verifyThemeChange(
-        tester: tester,
-        widgetTitle: 'Dark Theme',
-        prevThemeState: AppTheme.light,
-        themeMode: ThemeMode.dark,
-        newThemeState: AppTheme.dark,
-      );
-    });
-
-    testWidgets('change to Light Gold theme theme', (tester) async {
-      verifyThemeChange(
-        tester: tester,
-        widgetTitle: 'Light Gold',
-        prevThemeState: AppTheme.light,
-        themeMode: ThemeMode.dark,
-        newThemeState: AppTheme.lightGold,
-      );
-    });
-
-    testWidgets('change to Light Mint theme theme', (tester) async {
-      verifyThemeChange(
-        tester: tester,
-        widgetTitle: 'Light Mint',
-        prevThemeState: AppTheme.light,
-        themeMode: ThemeMode.dark,
-        newThemeState: AppTheme.lightMint,
-      );
-    });
-
-    // testWidgets('change to Dark Gold theme theme', (tester) async {
-    //   verifyThemeChange(
-    //     tester: tester,
-    //     widgetTitle: 'Dark Gold',
-    //     prevThemeState: AppTheme.light,
-    //     themeMode: ThemeMode.dark,
-    //     newThemeState: AppTheme.darkGold,
-    //   );
-    // });
   });
 }

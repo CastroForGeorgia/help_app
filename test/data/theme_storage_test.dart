@@ -15,7 +15,7 @@ void main() {
     });
 
     test('saveTheme should store the theme index', () async {
-      final theme = AppTheme.dark;
+      final theme = AppTheme.light;
 
       await themeStorage.saveTheme(theme);
 
